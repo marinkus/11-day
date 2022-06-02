@@ -13,30 +13,65 @@ body {
 /* Content Start */
 .container {
     width: 100%;
+    height: 600px;
     padding: 60px;
     display: flex;
     flex-direction: row;
     margin-left: calc(50% - 500px);
 }
+.bg-img {
+        width: 100%;
+        background-image: url(./);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 .left-column {
-    width: 400px;
-    height: auto;
-    background-color: red;
+    width: 350px;
+    height: 500px;
+    margin-top: 50px;
     align-items: center;
     text-align: center;
+    display: block;
+    position: relative;
 }
 .left-column > h1 {
     font-size: 50px;
-    margin-bottom: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 .left-column > a {
-    font-size: 18px;
-    margin-top: 100px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    display: inline;
+
 }
 .right-column {
-    width: 600px;
-    height: auto;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(145, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form {
+    padding: 20px;
+}
+.initialize {
+    display: inline-block;
+    padding: 20px;
+}
+.btn {
+    padding: 5px 15px;
+    border: 1px solid blue;
     background-color: blue;
+    border-radius: 5px;
+    color: #fff;
+
 }
 
 /* content end */
